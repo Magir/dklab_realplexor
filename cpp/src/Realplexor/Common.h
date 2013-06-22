@@ -37,7 +37,7 @@ public:
                 "]";
         }
         if (verb >= 2) {
-            cout << "[" << strftime_std(from_time_t(ev::now())) << "] " << msg << endl;
+            cout << "[" << strftime_std(from_time_t(ev::now(EV_DEFAULT))) << "] " << msg << endl;
         } else {
             cout << msg << endl;
         }
